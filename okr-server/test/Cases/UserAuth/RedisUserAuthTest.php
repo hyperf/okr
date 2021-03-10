@@ -11,6 +11,8 @@ declare(strict_types=1);
  */
 namespace HyperfTest\Cases\UserAuth;
 
+use App\Service\Dao\UserDao;
+use App\Service\UserAuth\RedisUserAuth;
 use HyperfTest\HttpTestCase;
 
 /**
@@ -19,5 +21,13 @@ use HyperfTest\HttpTestCase;
  */
 class RedisUserAuthTest extends HttpTestCase
 {
-    // public function test
+    public function testUserAuthInit()
+    {
+        $userAuth = di()->get(RedisUserAuth::class);
+        $model = di()->get(UserDao::class)->first(1);
+
+        $userAuth->init($model);
+        $this->assertSame(1, $userAuth->getId());
+        $this->assertIsString($userAuth->getToken());
+    }
 }

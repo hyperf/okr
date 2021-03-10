@@ -53,6 +53,11 @@ class RedisUserAuth extends Service implements UserAuthInterface
 
         $this->redis->set($this->formatToken($token), $serialized, $this->ttl);
 
+        Context::set(UserAuthInterface::class . '::data', [
+            'id' => (int) $user->id,
+            'token' => $token,
+        ]);
+
         return $this;
     }
 

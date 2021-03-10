@@ -28,4 +28,9 @@ class ErrorCode extends AbstractConstants
      * @Message("TOKEN非法，请重新登录")
      */
     const TOKEN_INVALID = 700;
+
+    /**
+     * @Message("用户不存在")
+     */
+    const USER_NOT_EXIST = 1000;
 }
