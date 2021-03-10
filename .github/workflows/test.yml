@@ -24,7 +24,11 @@ jobs:
           tools: phpize
           ini-values: opcache.enable_cli=1
           coverage: none
-          extensions: pdo, pdo_mysql
+          extensions: pdo, pdo_mysql, redis
+      - name: Setup Services
+        run: |
+          docker run --name mysql -p 3306:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=true -d mysql:5.7 --bind-address=0.0.0.0 --default-authentication-plugin=mysql_native_password
+          docker run --name redis -p 6379:6379 -d redis
       - name: Setup Swoole
         run: |
           sudo apt-get install libcurl4-openssl-dev
@@ -47,7 +51,10 @@ jobs:
           php -i
       - name: Run Test Cases
         run: |
+          mysql -h 127.0.0.1 -u root -e "CREATE DATABASE IF NOT EXISTS okr charset=utf8mb4 collate=utf8mb4_unicode_ci;"
           cd okr-server
+          cp .env.example .env
           composer update -o
+          php bin/hyperf.php migrate:fresh --seed
           composer analyse
           composer test
