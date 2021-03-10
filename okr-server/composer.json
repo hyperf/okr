@@ -1,0 +1,92 @@
+{
+    "name": "hyperf/biz-skeleton",
+    "type": "project",
+    "keywords": [
+        "php",
+        "swoole",
+        "framework",
+        "hyperf",
+        "microservice",
+        "middleware"
+    ],
+    "description": "A coroutine framework that focuses on hyperspeed and flexible, specifically use for build microservices and middlewares.",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.3",
+        "ext-json": "*",
+        "ext-openssl": "*",
+        "ext-pdo": "*",
+        "ext-pdo_mysql": "*",
+        "ext-redis": "*",
+        "ext-swoole": ">=4.5",
+        "hyperf/async-queue": "2.1.*",
+        "hyperf/cache": "2.1.*",
+        "hyperf/command": "2.1.*",
+        "hyperf/config": "2.1.*",
+        "hyperf/constants": "2.1.*",
+        "hyperf/contract": "2.1.*",
+        "hyperf/database": "2.1.*",
+        "hyperf/db-connection": "2.1.*",
+        "hyperf/di": "2.1.*",
+        "hyperf/dispatcher": "2.1.*",
+        "hyperf/event": "2.1.*",
+        "hyperf/exception-handler": "2.1.*",
+        "hyperf/framework": "2.1.*",
+        "hyperf/guzzle": "2.1.*",
+        "hyperf/http-server": "2.1.*",
+        "hyperf/logger": "2.1.*",
+        "hyperf/model-cache": "2.1.*",
+        "hyperf/pool": "2.1.*",
+        "hyperf/process": "2.1.*",
+        "hyperf/redis": "2.1.*",
+        "hyperf/server": "2.1.*",
+        "hyperf/utils": "2.1.*"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.14",
+        "hyperf/devtool": "2.1.*",
+        "hyperf/testing": "2.1.*",
+        "mockery/mockery": "^1.0",
+        "phpstan/phpstan": "^0.12.18",
+        "swoole/ide-helper": "dev-master",
+        "symfony/var-dumper": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": [
+            "app/Kernel/Functions.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HyperfTest\\": "test/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "extra": [],
+    "scripts": {
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-autoload-dump": [
+            "rm -rf runtime/container"
+        ],
+        "analyse": "phpstan analyse --memory-limit 512M -l 0 -c phpstan.neon ./app ./config",
+        "cs-fix": "php-cs-fixer fix $1",
+        "start": "php ./bin/hyperf.php start",
+        "test": "co-phpunit -c phpunit.xml --colors=always"
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer"
+        }
+    }
+}
