@@ -15,4 +15,5 @@ return [
 
     // 业务类映射关系
     App\Contract\UserAuthInterface::class => App\Service\UserAuth\RedisUserAuth::class,
+    App\Contract\PassworderInterface::class => App\Service\Passworder::class,
 ];

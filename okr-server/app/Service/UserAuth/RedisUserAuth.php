@@ -15,10 +15,12 @@ use App\Constants\ErrorCode;
 use App\Contract\UserAuthInterface;
 use App\Exception\BusinessException;
 use App\Model\User;
+use Han\Utils\Service;
 use Hyperf\Redis\Redis;
 use Hyperf\Utils\Context;
+use Psr\Container\ContainerInterface;
 
-class RedisUserAuth implements UserAuthInterface
+class RedisUserAuth extends Service implements UserAuthInterface
 {
     /**
      * @var Redis
@@ -35,9 +37,10 @@ class RedisUserAuth implements UserAuthInterface
      */
     protected $ttl = 86400;
 
-    public function __construct(Redis $redis)
+    public function __construct(ContainerInterface $container)
     {
-        $this->redis = $redis;
+        $this->redis = $container->get(Redis::class);
+        parent::__construct($container);
     }
 
     public function init(User $user)
