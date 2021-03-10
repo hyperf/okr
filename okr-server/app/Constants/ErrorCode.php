@@ -23,4 +23,9 @@ class ErrorCode extends AbstractConstants
      * @Message("Server Error")
      */
     const SERVER_ERROR = 500;
+
+    /**
+     * @Message("TOKEN非法，请重新登录")
+     */
+    const TOKEN_INVALID = 700;
 }
