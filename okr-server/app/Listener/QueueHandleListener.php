@@ -63,7 +63,7 @@ class QueueHandleListener implements ListenerInterface
                     break;
                 case $event instanceof FailedHandle:
                     $this->logger->error(sprintf('[%s] Failed %s.', $date, $jobClass));
-                    $this->logger->error(format_throwable($event->getThrowable()));
+                    $this->logger->error((string) $event->getThrowable());
                     break;
                 case $event instanceof RetryHandle:
                     $this->logger->warning(sprintf('[%s] Retried %s.', $date, $jobClass));

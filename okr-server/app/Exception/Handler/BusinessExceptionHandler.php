@@ -52,12 +52,12 @@ class BusinessExceptionHandler extends ExceptionHandler
         }
 
         if ($throwable instanceof BusinessException) {
-            $this->logger->warning(format_throwable($throwable));
+            $this->logger->warning((string) $throwable);
 
             return $this->response->fail($throwable->getCode(), $throwable->getMessage());
         }
 
-        $this->logger->error(format_throwable($throwable));
+        $this->logger->error((string) $throwable);
 
         return $this->response->fail(ErrorCode::SERVER_ERROR, 'Server Error');
     }

@@ -13,6 +13,7 @@ use App\Contract\PassworderInterface;
 use App\Model\User;
 use Hyperf\Database\Seeders\Seeder;
 use Hyperf\DbConnection\Db;
+use Hyperf\Utils\ApplicationContext;
 
 class CreateUsers extends Seeder
 {
@@ -21,7 +22,7 @@ class CreateUsers extends Seeder
      */
     public function run()
     {
-        $passworder = di()->get(PassworderInterface::class);
+        $passworder = ApplicationContext::getContainer()->get(PassworderInterface::class);
         Db::table('user')->insert([
             [
                 'email' => 'okr@hyperf.io',
