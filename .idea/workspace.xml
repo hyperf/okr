@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4da0ef74-61f8-4e8c-b999-b3e22910c499" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/okr-server/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/okr-server/.env.example" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/okr-server/app/Service/CodeSender/EmailCodeSender.php" beforeDir="false" afterPath="$PROJECT_DIR$/okr-server/app/Service/CodeSender/EmailCodeSender.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/okr-server/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/okr-server/composer.json" afterDir="false" />
-    </list>
+    <list default="true" id="4da0ef74-61f8-4e8c-b999-b3e22910c499" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -171,7 +167,7 @@
       <option name="presentableId" value="Default" />
       <updated>1615635866215</updated>
       <workItem from="1615635869887" duration="514000" />
-      <workItem from="1615636396855" duration="4202000" />
+      <workItem from="1615636396855" duration="4528000" />
     </task>
     <servers />
   </component>
