@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4da0ef74-61f8-4e8c-b999-b3e22910c499" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/okr-server/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/okr-server/.env.example" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/okr-server/app/Service/CodeSender/EmailCodeSender.php" beforeDir="false" afterPath="$PROJECT_DIR$/okr-server/app/Service/CodeSender/EmailCodeSender.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/okr-server/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/okr-server/composer.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/okr-server/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/okr-server/vendor/hyperf/command" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/hyperf/devtool" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/hyperf/exception-handler" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/hyperf/testing" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/hyperf/utils" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/hyperf/http-message" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/hyperf/dispatcher" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/hyperf/server" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/hyperf/constants" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/hyperf/model-cache" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/hyperf/redis" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/hyperf/async-queue" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/hyperf/framework" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/hyperf/config" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/hyperf/http-server" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/hyperf/cache" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/hyperf/model-listener" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/hyperf/logger" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/hyperf/contract" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/hyperf/di" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/roave/signature" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/hyperf/database" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/nikic/fast-route" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/roave/better-reflection" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/psr/http-server-middleware" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/fig/http-message-util" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/psr/http-server-handler" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/composer" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/limingxinleo/hyperf-utils" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/php-cs-fixer/diff" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/friendsofphp/php-cs-fixer" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/phpstan/phpstan" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/laminas/laminas-zendframework-bridge" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/laminas/laminas-stdlib" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/laminas/laminas-mime" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/swoole/ide-helper" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/hyperf/process" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/hyperf/guzzle" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/hyperf/pool" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/hyperf/event" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/hyperf/db-connection" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/hyperf/engine" />
+      <path value="$PROJECT_DIR$/okr-server/vendor/phpmailer/phpmailer" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1phWaUJU6ZJjxb2bl5eDQ7c0SWY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4da0ef74-61f8-4e8c-b999-b3e22910c499" name="Default Changelist" comment="" />
+      <created>1615635866215</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615635866215</updated>
+      <workItem from="1615635869887" duration="514000" />
+      <workItem from="1615636396855" duration="4202000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
