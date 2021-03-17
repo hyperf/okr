@@ -9,8 +9,11 @@ declare(strict_types=1);
  * @contact  group@hyperf.io
  * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
-use Hyperf\HttpServer\Router\Router;
+namespace App\Contract;
 
-Router::addRoute(['GET', 'POST', 'HEAD'], '/', 'App\Controller\IndexController::index');
+interface CodeGeneratorInterface
+{
+    public function generate(string $name): string;
 
-Router::post('/user/send-code', App\Controller\UserController::class . '::sendCode');
+    public function verify(string $name, string $code): bool;
+}

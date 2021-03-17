@@ -41,6 +41,7 @@
         "hyperf/redis": "2.1.*",
         "hyperf/server": "2.1.*",
         "hyperf/utils": "2.1.*",
+        "hyperf/validation": "2.1.*",
         "limingxinleo/hyperf-utils": "^3.0",
         "yurunsoft/phpmailer-swoole": "^1.0"
     },
