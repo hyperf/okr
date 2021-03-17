@@ -11,6 +11,7 @@ declare(strict_types=1);
  */
 namespace HyperfTest;
 
+use Hyperf\Contract\ContainerInterface;
 use Hyperf\Testing;
 use Hyperf\Utils\ApplicationContext;
 use Mockery;
@@ -31,7 +32,7 @@ abstract class HttpTestCase extends TestCase
     protected $client;
 
     /**
-     * @var \Psr\Container\ContainerInterface
+     * @var ContainerInterface
      */
     protected $container;
 

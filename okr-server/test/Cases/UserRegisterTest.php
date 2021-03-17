@@ -11,7 +11,10 @@ declare(strict_types=1);
  */
 namespace HyperfTest\Cases;
 
+use Hyperf\Redis\Redis;
 use HyperfTest\HttpTestCase;
+use HyperfTest\Stubs\PHPMailerStub;
+use PHPMailer\PHPMailer\PHPMailer;
 
 /**
  * @internal
@@ -21,12 +24,15 @@ class UserRegisterTest extends HttpTestCase
 {
     public function testUserSendCode()
     {
-        // $res = $this->json('/user/send-code', [
-        //     'name' => '111@qq.com',
-        // ]);
-        //
-        // $this->assertSame(0, $res['code']);
+        $this->container->define(PHPMailer::class, PHPMailerStub::class);
 
-        $this->assertTrue(true);
+        $res = $this->json('/user/send-code', [
+            'name' => '715557344@qq.com',
+        ]);
+
+        $this->assertSame(0, $res['code']);
+
+        $code = $this->container->get(Redis::class)->get('code:generator:111@qq.com');
+        $this->assertNotEmpty($code);
     }
 }

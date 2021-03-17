@@ -12,7 +12,10 @@ declare(strict_types=1);
 namespace HyperfTest\Cases\CodeSender;
 
 use App\Service\CodeSender\EmailCodeSender;
+use Hyperf\Utils\Context;
 use HyperfTest\HttpTestCase;
+use HyperfTest\Stubs\PHPMailerStub;
+use PHPMailer\PHPMailer\PHPMailer;
 
 /**
  * @internal
@@ -22,8 +25,14 @@ class EmailCodeSenderTest extends HttpTestCase
 {
     public function testSendEmail()
     {
+        $this->container->define(PHPMailer::class, PHPMailerStub::class);
+
         $sender = $this->container->get(EmailCodeSender::class);
 
-        $this->assertTrue(true);
+        $sender->send('10001@qq.com', '1234');
+
+        $mailer = Context::get(PHPMailer::class);
+
+        $this->assertSame('10001@qq.com', $mailer->getToAddresses()[0][0]);
     }
 }

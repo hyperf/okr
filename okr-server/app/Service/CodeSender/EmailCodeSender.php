@@ -44,7 +44,7 @@ class EmailCodeSender implements CodeSenderInterface
 
     public function send(string $name, string $code): void
     {
-        $mail = new PHPMailer(true); // 初始化 PHPMailer
+        $mail = make(PHPMailer::class, [true]); // 初始化 PHPMailer
         $mail->SMTPDebug = SMTP::DEBUG_SERVER; // 启用详细调试输出
         $mail->isSMTP(); // 使用 SMTP 发送邮件
         $mail->Host = $this->host; // 设置 SMTP 服务器地址
