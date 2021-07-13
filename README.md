@@ -41,3 +41,39 @@
     - DELETE /zoos/ID：删除某个动物园
     - GET /zoos/ID/animals：列出某个指定动物园的所有动物
     - DELETE /zoos/ID/animals/ID：删除某个指定动物园的指定动物
+
+## 接口列表
+
+### 接口结构
+
+| 字段名  | 类型    | 默认值 | 备注     |
+| ------- | ------- | ------ | -------- |
+| code    | Integer | 0      | 0成功    |
+| data    | Mixed   | null   | 数据集合 |
+| message | String  | null   | 错误信息 |
+
+### 用户模块
+
+- 发送注册验证码
+
+POST /user/send-code
+
+入参
+
+| 字段名 | 类型   | 默认值 | 备注 |
+| ------ | ------ | ------ | ---- |
+| name   | String | 无     | 邮箱 |
+
+- 用户注册
+
+POST /user/register
+
+入参
+
+| 字段名   | 类型    | 默认值 | 备注                    |
+| -------- | ------- | ------ | ----------------------- |
+| name     | String  | 无     | 邮箱                    |
+| username | String  | 无     | 登录名，不填则默认邮箱  |
+| nickname | String  | 无     | 昵称                    |
+| password | String  | 无     | 密码，前端需要 MD5 处理 |
+| gender   | Integer | 无     | 性别 1男 2女            |
