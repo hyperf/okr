@@ -1,6 +1,6 @@
 name: PHPUnit for Hyperf
 
-on: [push, pull_request]
+on: [ push, pull_request ]
 
 jobs:
   ci:
@@ -8,9 +8,9 @@ jobs:
     runs-on: '${{ matrix.os }}'
     strategy:
       matrix:
-        os: [ubuntu-latest]
-        php-version: ['7.3', '7.4', '8.0']
-        swoole-version: ['4.5.11', '4.6.7']
+        os: [ ubuntu-latest ]
+        php-version: [ '7.4', '8.0' ]
+        swoole-version: [ '4.5.11', '4.6.7' ]
       max-parallel: 4
     env:
       SW_VERSION: ${{ matrix.swoole-version }}
