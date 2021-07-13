@@ -22,9 +22,9 @@ namespace App\Model;
  */
 class User extends Model
 {
-    const BOY = 1;
+    public const BOY = 1;
 
-    const GIRL = 2;
+    public const GIRL = 2;
 
     /**
      * The table associated with the model.

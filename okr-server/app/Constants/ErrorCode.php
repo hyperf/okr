@@ -22,15 +22,15 @@ class ErrorCode extends AbstractConstants
     /**
      * @Message("Server Error")
      */
-    const SERVER_ERROR = 500;
+    public const SERVER_ERROR = 500;
 
     /**
      * @Message("TOKEN非法，请重新登录")
      */
-    const TOKEN_INVALID = 700;
+    public const TOKEN_INVALID = 700;
 
     /**
      * @Message("用户不存在")
      */
-    const USER_NOT_EXIST = 1000;
+    public const USER_NOT_EXIST = 1000;
 }
