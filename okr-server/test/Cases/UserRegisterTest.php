@@ -32,7 +32,7 @@ class UserRegisterTest extends HttpTestCase
 
         $this->assertSame(0, $res['code']);
 
-        $code = $this->container->get(Redis::class)->get('code:generator:111@qq.com');
+        $code = $this->container->get(Redis::class)->get('code:generator:715557344@qq.com');
         $this->assertNotEmpty($code);
     }
 }
