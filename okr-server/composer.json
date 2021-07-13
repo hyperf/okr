@@ -42,7 +42,7 @@
         "hyperf/server": "2.2.*",
         "hyperf/utils": "2.2.*",
         "hyperf/validation": "2.2.*",
-        "limingxinleo/hyperf-utils": "^3.0",
+        "limingxinleo/hyperf-utils": "^3.1",
         "yurunsoft/phpmailer-swoole": "^1.0"
     },
     "require-dev": {

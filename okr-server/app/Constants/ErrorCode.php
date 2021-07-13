@@ -30,7 +30,12 @@ class ErrorCode extends AbstractConstants
     public const TOKEN_INVALID = 700;
 
     /**
+     * @Message("参数错误")
+     */
+    public const PARAMS_INVALID = 1000;
+
+    /**
      * @Message("用户不存在")
      */
-    public const USER_NOT_EXIST = 1000;
+    public const USER_NOT_EXIST = 1001;
 }
