@@ -20,15 +20,13 @@ class UserRegisterService extends Service
 {
     /**
      * @Inject
-     * @var CodeSenderInterface
      */
-    protected $sender;
+    protected CodeSenderInterface $sender;
 
     /**
      * @Inject
-     * @var CodeGeneratorInterface
      */
-    protected $generator;
+    protected CodeGeneratorInterface $generator;
 
     public function sendCode(string $name): bool
     {

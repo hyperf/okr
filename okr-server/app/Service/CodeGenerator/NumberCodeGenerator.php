@@ -19,9 +19,8 @@ class NumberCodeGenerator implements CodeGeneratorInterface
 {
     /**
      * @Inject
-     * @var Redis
      */
-    protected $redis;
+    protected Redis $redis;
 
     public function generate(string $name): string
     {

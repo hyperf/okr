@@ -19,9 +19,8 @@ class UserController extends Controller
 {
     /**
      * @Inject
-     * @var UserRegisterService
      */
-    protected $register;
+    protected UserRegisterService $register;
 
     public function sendCode(SendCodeRequest $request)
     {
